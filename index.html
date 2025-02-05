@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6427a83ee5.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+        <div class="container">
+          <nav>
+            <div><a href="#header">Backstreet Boys</a></div>
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#member">Member</a></li>
+              <li><a href="#myproject">Album</a></li>
+              <li><a href="#contact">Contact Me</a></li>
+              <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="header-text">
+              <h1>Backstreet Boys
+                <br><span>Student Developer</span></h1>
+              <p>This is my Portfolio Website </p>
+          </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+              <div class="about-col-1">
+                  <img src="images/back_ground.jpg">
+                 </div>
+              <div class="about-col-2">
+                  <h1 class="sub-title">About</h1>
+                  <p>The Backstreet Boys (BSB) are an American boy band formed in 1993 in Orlando, Florida.
+                       The group consists of AJ McLean, Howie Dorough, Nick Carter, Kevin Richardson, and Brian Littrell.
+                  </p>
+
+                  <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('skills')">Song</p>
+                      <p class="tab-links" onclick="opentab('experience')">Award</p>
+                      <p class="tab-links" onclick="opentab('education')">Album</p>
+                  </div>
+
+                  <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>
+                          <span>AJ McLean</span><br>Vocalist, Backing Vocals, Performer
+                          <ul>
+                            <li><strong>Top Song:</strong> "I Want It That Way" (1999)</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <span>Howie Dorough</span><br>Vocalist, Backing Vocals, Performer
+                          <ul>
+                            <li><strong>Top Song:</strong> "Backstreet's Back (Alright)" (1997)</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <span>Nick Carter</span><br>Lead Vocals, Performer, Songwriter
+                          <ul>
+                            <li><strong>Top Song:</strong> "Larger Than Life" (1999)</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <span>Kevin Richardson</span><br>Vocalist, Backing Vocals, Performer, Songwriter
+                          <ul>
+                            <li><strong>Top Song:</strong> "Shape of My Heart" (2000)</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <span>Brian Littrell</span><br>Lead Vocals, Backing Vocals, Performer, Songwriter
+                          <ul>
+                            <li><strong>Top Song:</strong> "Quit Playing Games (With My Heart)" (1996)</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      
+                  </div>
+
+                  <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Top Award:</span><br>MTV Europe Music Award for Best Pop (2000)</li>
+                        <li><span>Top Award:</span><br>American Music Award for Favorite Pop/Rock Band (2000)</li>
+                        <li><span>Top Award:</span><br>Billboard Music Award for Top Selling Album of the Year (1999)</li>
+                        <li><span>Top Award:</span><br>People's Choice Award for Favorite Music Group (2001)</li>
+                      </ul>                      
+                  </div>
+
+                  <div class="tab-contents" id="education">
+                    <h3>Top Albums by Backstreet Boys</h3>
+                        <ul>
+                        <li><span>1996</span><br>Backstreet Boys (Debut Album)</li>
+                        <li><span>1999</span><br>Millennium</li>
+                        <li><span>2000</span><br>Black & Blue</li>
+                        <li><span>2005</span><br>Never Gone</li>
+                        </ul>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="member">
+        <div class="member-container mt-5">
+          <h2 class="member-sub-title">Team Members</h2>
+          <div class="member-row">
+            <!-- Top row (3 cards) -->
+            <div class="member-col-md-4">
+              <div class="member-card" style="width: 18rem;">
+                <img src="images/ajjj.jpg" class="member-card-img-top" alt="...">
+                <div class="member-card-body">
+                  <h5 class="member-card-title">AJ McLean</h5>
+                  <p class="card-text">Vocalist, Backing Vocals, Performer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="member-col-md-4">
+              <div class="member-card" style="width: 18rem;">
+                <img src="images/howie.jpg" class="member-card-img-top" alt="...">
+                <div class="member-card-body">
+                  <h5 class="member-card-title">Howie Dorough</h5>
+                  <p class="card-text">Vocalist, Backing Vocals, Performer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="member-col-md-4">
+              <div class="member-card" style="width: 18rem;">
+                <img src="images/nick.jpg" class="member-card-img-top" alt="...">
+                <div class="member-card-body">
+                  <h5 class="member-card-title">Nick Carter</h5>
+                  <p class="card-text">Lead Vocals, Performer, Songwriter.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="member-row">
+            <!-- Bottom row (2 cards) -->
+            <div class="member-col-md-6">
+              <div class="member-card" style="width: 18rem;">
+                <img src="images/kevin.jpg" class="member-card-img-top" alt="...">
+                <div class="member-card-body">
+                  <h5 class="member-card-title">Kevin Richardson</h5>
+                  <p class="card-text">Vocalist, Backing Vocals, Performer, Songwriter.</p>
+                </div>
+              </div>
+            </div>
+            <div class="member-col-md-6">
+              <div class="member-card" style="width: 18rem;">
+                <img src="images/brian.jpg" class="member-card-img-top" alt="...">
+                <div class="member-card-body">
+                  <h5 class="member-card-title">Brian Littrell</h5>
+                  <p class="card-text">Lead Vocals, Backing Vocals, Performer, Songwriter.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    <div id="myproject">
+        <div class="container">
+            <h1 class="sub-title">Top Album</h1>
+            <div class="myproject-list">
+                <div>
+                    <i class="fa-solid fa-compact-disc"></i>
+                    <h3>Backstreet Boys (1996)</h3>
+                    <p>Debut album featuring hits like "Quit Playing Games" and "As Long As You Love Me."</p>
+                    <a href="https://en.wikipedia.org/wiki/Backstreet_Boys_(album)">Click to Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-compact-disc"></i>
+                    <h3>Millennium (1999)</h3>
+                    <p>Includes iconic hits like "I Want It That Way" and "Larger Than Life."</p>
+                    <a href="https://en.wikipedia.org/wiki/Millennium_(Backstreet_Boys_album)">Click to Learn More</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-compact-disc"></i>
+                <h3>Black & Blue (2000)</h3>
+                <p>Featuring hits like "Shape of My Heart" and "The Call."</p>
+                <a href="https://en.wikipedia.org/wiki/Black_%26_Blue">Click to Learn More</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-compact-disc"></i>
+                <h3>Never Gone (2005)</h3>
+                <p>Marking a more mature sound, with songs like "Incomplete" and "Just Want You to Know."</p>
+                <a href="https://en.wikipedia.org/wiki/Never_Gone">Click to Learn More</a>               
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+          <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>Example@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>012312312312</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="" download class="btn btn2">Download Album</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+          </div>
+      </div>
+      <div id="footer">
+        <p><i class="fa-solid fa-copyright"></i> Backstreet Boys - Andrei Apostadero</p>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+              tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemeu.style.right = "0";
+      }
+
+      function closemenu(){
+        sidemeu.style.right ="-200px";
+      }
+    </script>
+  </body>
+</html>
